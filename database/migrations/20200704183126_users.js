@@ -3,6 +3,7 @@ exports.up = function(knex) {
     .createTable('users', user => {
       user.increments("id")
       user.varchar("email",255)
+      user.varchar("name",255)
       user.varchar("password",255)
       user.integer("age",4)
       user.varchar("gender",8)
